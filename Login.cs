@@ -36,8 +36,27 @@ namespace Park_Easy
             {
                 if (userid.Text != null & password.Text != null)
                 {
-                    var item = db.userInfos.Where(s=>s.)
+                    var item = db.loginusers.Where(s => s.User_ID == userid.Text & s.Password == password.Text).FirstOrDefault();
+                    if (item != null)
+                    {
+                        Welcome wc = new Welcome();
+                        wc.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("UserID or Password Not Found! Consider Creating an Account First :) ");
+                    }
                 }
+                else
+                {
+                    MessageBox.Show("UserID or Password Not Valid!");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error!");
             }
         }
 

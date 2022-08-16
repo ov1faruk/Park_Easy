@@ -9,3 +9,4 @@ D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.exe
 D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.pdb
 D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.Login.resources
 D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.Registration.resources
+D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.Welcome.resources

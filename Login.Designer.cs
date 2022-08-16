@@ -89,6 +89,7 @@ namespace Park_Easy
             this.password.Location = new System.Drawing.Point(307, 383);
             this.password.Multiline = true;
             this.password.Name = "password";
+            this.password.PasswordChar = '*';
             this.password.Size = new System.Drawing.Size(286, 34);
             this.password.TabIndex = 6;
             this.password.TextChanged += new System.EventHandler(this.textBox2_TextChanged);

@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Users" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-USM56V1\SQLEXPRESS;Initial Catalog=Users;Integrated Security=True" SettingsObjectName="Park_Easy.Properties.Settings" SettingsPropertyName="UsersConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.userInfo" Member="userInfos">
-    <Type Name="userInfo">
-      <Column Name="User_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="User_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+  <Table Name="dbo.loginuser" Member="loginusers">
+    <Type Name="loginuser">
+      <Column Name="User_ID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
 </Database>

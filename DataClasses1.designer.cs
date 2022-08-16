@@ -30,9 +30,9 @@ namespace Park_Easy
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertuserInfo(userInfo instance);
-    partial void UpdateuserInfo(userInfo instance);
-    partial void DeleteuserInfo(userInfo instance);
+    partial void Insertloginuser(loginuser instance);
+    partial void Updateloginuser(loginuser instance);
+    partial void Deleteloginuser(loginuser instance);
     #endregion
 		
 		public DataClasses1DataContext() : 
@@ -65,24 +65,22 @@ namespace Park_Easy
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<userInfo> userInfos
+		public System.Data.Linq.Table<loginuser> loginusers
 		{
 			get
 			{
-				return this.GetTable<userInfo>();
+				return this.GetTable<loginuser>();
 			}
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.userInfo")]
-	public partial class userInfo : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.loginuser")]
+	public partial class loginuser : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _User_ID;
-		
-		private string _User_Name;
+		private string _User_ID;
 		
 		private string _Password;
 		
@@ -90,21 +88,19 @@ namespace Park_Easy
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnUser_IDChanging(int value);
+    partial void OnUser_IDChanging(string value);
     partial void OnUser_IDChanged();
-    partial void OnUser_NameChanging(string value);
-    partial void OnUser_NameChanged();
     partial void OnPasswordChanging(string value);
     partial void OnPasswordChanged();
     #endregion
 		
-		public userInfo()
+		public loginuser()
 		{
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_User_ID", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int User_ID
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_User_ID", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string User_ID
 		{
 			get
 			{
@@ -123,27 +119,7 @@ namespace Park_Easy
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_User_Name", DbType="VarChar(50)")]
-		public string User_Name
-		{
-			get
-			{
-				return this._User_Name;
-			}
-			set
-			{
-				if ((this._User_Name != value))
-				{
-					this.OnUser_NameChanging(value);
-					this.SendPropertyChanging();
-					this._User_Name = value;
-					this.SendPropertyChanged("User_Name");
-					this.OnUser_NameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Password", DbType="VarChar(50)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Password", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
 		public string Password
 		{
 			get
