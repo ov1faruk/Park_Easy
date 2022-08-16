@@ -33,8 +33,8 @@ namespace Park_Easy
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.loginLabel = new System.Windows.Forms.Label();
             this.regLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.userid = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,31 +73,33 @@ namespace Park_Easy
             this.regLabel.Text = "Register";
             this.regLabel.Click += new System.EventHandler(this.regLabel_Click);
             // 
-            // textBox1
+            // userid
             // 
-            this.textBox1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(307, 327);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(286, 34);
-            this.textBox1.TabIndex = 5;
+            this.userid.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userid.Location = new System.Drawing.Point(307, 327);
+            this.userid.Multiline = true;
+            this.userid.Name = "userid";
+            this.userid.Size = new System.Drawing.Size(286, 34);
+            this.userid.TabIndex = 5;
+            this.userid.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // password
             // 
-            this.textBox2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(307, 383);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(286, 34);
-            this.textBox2.TabIndex = 6;
+            this.password.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password.Location = new System.Drawing.Point(307, 383);
+            this.password.Multiline = true;
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(286, 34);
+            this.password.TabIndex = 6;
+            this.password.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 811);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.password);
+            this.Controls.Add(this.userid);
             this.Controls.Add(this.regLabel);
             this.Controls.Add(this.loginLabel);
             this.Controls.Add(this.pictureBox1);
@@ -118,8 +120,8 @@ namespace Park_Easy
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label loginLabel;
         private System.Windows.Forms.Label regLabel;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox userid;
+        private System.Windows.Forms.TextBox password;
     }
 }
 
