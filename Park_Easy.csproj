@@ -12,6 +12,26 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\parkeasy2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>Park Easy</ProductName>
+    <PublisherName>ovifaruk</PublisherName>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +52,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B6EEAEA537EFFF9093B5AB1F0CA218AEA7934126</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Park_Easy_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,6 +79,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="accessDatabase.cs" />
+    <Compile Include="adminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminPanel.Designer.cs">
+      <DependentUpon>adminPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="DataClasses1.designer.cs">
       <AutoGen>True</AutoGen>
@@ -67,12 +106,9 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Welcome.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Welcome.Designer.cs">
-      <DependentUpon>Welcome.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="adminPanel.resx">
+      <DependentUpon>adminPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,12 +120,10 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Welcome.resx">
-      <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataClasses1.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
@@ -99,6 +133,7 @@
     <None Include="DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </None>
+    <None Include="Park_Easy_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -114,6 +149,45 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\Untitled design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\Untitled design %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\Untitled design %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\Untitled design %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\adminpanel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
