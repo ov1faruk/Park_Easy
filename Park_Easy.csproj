@@ -68,6 +68,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -92,6 +93,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
+    <Compile Include="driverType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="driverType.Designer.cs">
+      <DependentUpon>driverType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +115,9 @@
     </Compile>
     <EmbeddedResource Include="adminPanel.resx">
       <DependentUpon>adminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="driverType.resx">
+      <DependentUpon>driverType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -188,6 +198,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources_custom\ICONS\adminpanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\driverdetails.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

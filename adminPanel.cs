@@ -30,7 +30,9 @@ namespace Park_Easy
 
         private void driverType_Click(object sender, EventArgs e)
         {
-
+            driverType dtype = new driverType();
+            dtype.Show();
+            this.Hide();
         }
 
         private void driverType_MouseHover(object sender, EventArgs e)

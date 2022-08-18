@@ -14,3 +14,4 @@ D:\Park_Easy\Park_Easy\bin\Debug\Park_Easy.application
 D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.exe.manifest
 D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.application
 D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.adminPanel.resources
+D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.driverType.resources
