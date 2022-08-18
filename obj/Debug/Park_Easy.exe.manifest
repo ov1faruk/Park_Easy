@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Park_Easy.exe" size="4514272">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Park_Easy.exe" size="4518368">
       <assemblyIdentity name="Park_Easy" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zG2JdtZTdMBPG2Saj2BhpqurGuAkXTcnJ615KMsNJG0=</dsig:DigestValue>
+        <dsig:DigestValue>XKp/8DrH/JzZnlko3iVh5cfIOSQr7Qnnj8p5rmU41xc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
