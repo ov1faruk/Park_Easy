@@ -41,8 +41,8 @@ namespace Park_Easy
 
         private void regLabel_Click(object sender, EventArgs e)
         {
-            Registration reg = new Registration();
-            reg.Show();
+            regUser reguser = new regUser();
+            reguser.Show();
             this.Hide();
         }
 
@@ -52,6 +52,11 @@ namespace Park_Easy
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

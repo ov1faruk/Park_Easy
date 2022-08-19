@@ -87,6 +87,18 @@
     <Compile Include="adminPanel.Designer.cs">
       <DependentUpon>adminPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="checkIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkIN.Designer.cs">
+      <DependentUpon>checkIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkOUT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkOUT.Designer.cs">
+      <DependentUpon>checkOUT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="DataClasses1.designer.cs">
       <AutoGen>True</AutoGen>
@@ -105,6 +117,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="parkHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parkHistory.Designer.cs">
+      <DependentUpon>parkHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.cs">
@@ -113,14 +131,35 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="regUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regUser.Designer.cs">
+      <DependentUpon>regUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vehicleType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vehicleType.Designer.cs">
+      <DependentUpon>vehicleType.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="adminPanel.resx">
       <DependentUpon>adminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkIN.resx">
+      <DependentUpon>checkIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkOUT.resx">
+      <DependentUpon>checkOUT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="driverType.resx">
       <DependentUpon>driverType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parkHistory.resx">
+      <DependentUpon>parkHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -134,6 +173,12 @@
     </Compile>
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regUser.resx">
+      <DependentUpon>regUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vehicleType.resx">
+      <DependentUpon>vehicleType.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataClasses1.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
@@ -201,6 +246,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources_custom\ICONS\driverdetails.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\updatedadminpanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\vehdet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\checkin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\checkout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources_custom\ICONS\parkhistory.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

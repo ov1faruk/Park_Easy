@@ -15,7 +15,9 @@ namespace Park_Easy
         public adminPanel()
         {
             InitializeComponent();
-            
+            logout.Parent = pictureBox2;
+            logout.BackColor = Color.Transparent;
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -67,12 +69,12 @@ namespace Park_Easy
 
         private void allVehicle_MouseHover(object sender, EventArgs e)
         {
-            allVehicle.BackColor = Color.Magenta;
+            
         }
 
         private void allVehicle_MouseLeave(object sender, EventArgs e)
         {
-            allVehicle.BackColor = Color.DimGray;
+            
         }
 
         private void checkin_MouseHover(object sender, EventArgs e)
@@ -87,7 +89,9 @@ namespace Park_Easy
 
         private void checkout_Click(object sender, EventArgs e)
         {
-
+            checkOUT co = new checkOUT();
+            co.Show();
+            this.Hide();
         }
 
         private void checkout_MouseHover(object sender, EventArgs e)
@@ -118,6 +122,59 @@ namespace Park_Easy
         private void parkhistory_MouseLeave(object sender, EventArgs e)
         {
             parkhistory.BackColor = Color.DimGray;
+        }
+
+        private void vehicleType_Click(object sender, EventArgs e)
+        {
+            vehicleType vtype = new vehicleType();
+            vtype.Show();
+            this.Hide();
+        }
+
+        private void registration_Click(object sender, EventArgs e)
+        {
+            Registration reg = new Registration();
+            reg.Show();
+            this.Hide();
+        }
+
+        private void checkin_Click(object sender, EventArgs e)
+        {
+            checkIN ci = new checkIN();
+            ci.Show();
+            this.Hide();
+        }
+
+        private void parkhistory_Click(object sender, EventArgs e)
+        {
+            parkHistory ph = new parkHistory();
+            ph.Show();
+            this.Hide();
+        }
+
+        private void logout_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Hide();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logout_Click_1(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Hide();
         }
     }
 }

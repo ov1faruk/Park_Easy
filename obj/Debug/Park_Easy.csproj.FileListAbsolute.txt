@@ -15,3 +15,8 @@ D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.exe.manifest
 D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.application
 D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.adminPanel.resources
 D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.driverType.resources
+D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.vehicleType.resources
+D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.checkIN.resources
+D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.checkOUT.resources
+D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.parkHistory.resources
+D:\Park_Easy\Park_Easy\obj\Debug\Park_Easy.regUser.resources

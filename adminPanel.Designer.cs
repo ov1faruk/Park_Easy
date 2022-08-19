@@ -29,38 +29,18 @@ namespace Park_Easy
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.driverType = new System.Windows.Forms.Button();
             this.vehicleType = new System.Windows.Forms.Button();
             this.registration = new System.Windows.Forms.Button();
-            this.allVehicle = new System.Windows.Forms.Button();
             this.checkin = new System.Windows.Forms.Button();
             this.checkout = new System.Windows.Forms.Button();
             this.parkhistory = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.logout = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Park_Easy.Properties.Resources.adminpanel;
-            this.pictureBox1.Location = new System.Drawing.Point(-2991, 107);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1547, 1043);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Park_Easy.Properties.Resources.adminpanel;
-            this.pictureBox2.Location = new System.Drawing.Point(1, -3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1904, 1050);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // driverType
             // 
@@ -68,10 +48,10 @@ namespace Park_Easy
             this.driverType.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.driverType.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.driverType.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.driverType.Location = new System.Drawing.Point(230, 230);
+            this.driverType.Location = new System.Drawing.Point(342, 377);
             this.driverType.Margin = new System.Windows.Forms.Padding(0);
             this.driverType.Name = "driverType";
-            this.driverType.Size = new System.Drawing.Size(151, 56);
+            this.driverType.Size = new System.Drawing.Size(173, 70);
             this.driverType.TabIndex = 2;
             this.driverType.Text = "Driver Type";
             this.driverType.UseVisualStyleBackColor = false;
@@ -85,13 +65,14 @@ namespace Park_Easy
             this.vehicleType.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.vehicleType.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vehicleType.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.vehicleType.Location = new System.Drawing.Point(447, 230);
+            this.vehicleType.Location = new System.Drawing.Point(896, 377);
             this.vehicleType.Margin = new System.Windows.Forms.Padding(0);
             this.vehicleType.Name = "vehicleType";
-            this.vehicleType.Size = new System.Drawing.Size(151, 56);
+            this.vehicleType.Size = new System.Drawing.Size(167, 70);
             this.vehicleType.TabIndex = 3;
             this.vehicleType.Text = "Vehicle Type";
             this.vehicleType.UseVisualStyleBackColor = false;
+            this.vehicleType.Click += new System.EventHandler(this.vehicleType_Click);
             this.vehicleType.MouseLeave += new System.EventHandler(this.vehicleType_MouseLeave);
             this.vehicleType.MouseHover += new System.EventHandler(this.vehicleType_MouseHover);
             // 
@@ -101,31 +82,16 @@ namespace Park_Easy
             this.registration.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.registration.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registration.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.registration.Location = new System.Drawing.Point(659, 230);
+            this.registration.Location = new System.Drawing.Point(1454, 377);
             this.registration.Margin = new System.Windows.Forms.Padding(0);
             this.registration.Name = "registration";
-            this.registration.Size = new System.Drawing.Size(151, 56);
+            this.registration.Size = new System.Drawing.Size(165, 70);
             this.registration.TabIndex = 4;
             this.registration.Text = "Registration";
             this.registration.UseVisualStyleBackColor = false;
+            this.registration.Click += new System.EventHandler(this.registration_Click);
             this.registration.MouseLeave += new System.EventHandler(this.registration_MouseLeave);
             this.registration.MouseHover += new System.EventHandler(this.registration_MouseHover);
-            // 
-            // allVehicle
-            // 
-            this.allVehicle.BackColor = System.Drawing.Color.DimGray;
-            this.allVehicle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.allVehicle.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.allVehicle.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.allVehicle.Location = new System.Drawing.Point(879, 230);
-            this.allVehicle.Margin = new System.Windows.Forms.Padding(0);
-            this.allVehicle.Name = "allVehicle";
-            this.allVehicle.Size = new System.Drawing.Size(151, 56);
-            this.allVehicle.TabIndex = 5;
-            this.allVehicle.Text = "All Vehicle";
-            this.allVehicle.UseVisualStyleBackColor = false;
-            this.allVehicle.MouseLeave += new System.EventHandler(this.allVehicle_MouseLeave);
-            this.allVehicle.MouseHover += new System.EventHandler(this.allVehicle_MouseHover);
             // 
             // checkin
             // 
@@ -133,13 +99,14 @@ namespace Park_Easy
             this.checkin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.checkin.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkin.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkin.Location = new System.Drawing.Point(1093, 230);
+            this.checkin.Location = new System.Drawing.Point(404, 881);
             this.checkin.Margin = new System.Windows.Forms.Padding(0);
             this.checkin.Name = "checkin";
-            this.checkin.Size = new System.Drawing.Size(151, 56);
+            this.checkin.Size = new System.Drawing.Size(160, 76);
             this.checkin.TabIndex = 6;
             this.checkin.Text = "Check-IN";
             this.checkin.UseVisualStyleBackColor = false;
+            this.checkin.Click += new System.EventHandler(this.checkin_Click);
             this.checkin.MouseLeave += new System.EventHandler(this.checkin_MouseLeave);
             this.checkin.MouseHover += new System.EventHandler(this.checkin_MouseHover);
             // 
@@ -149,10 +116,10 @@ namespace Park_Easy
             this.checkout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.checkout.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkout.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkout.Location = new System.Drawing.Point(1315, 230);
+            this.checkout.Location = new System.Drawing.Point(873, 881);
             this.checkout.Margin = new System.Windows.Forms.Padding(0);
             this.checkout.Name = "checkout";
-            this.checkout.Size = new System.Drawing.Size(151, 56);
+            this.checkout.Size = new System.Drawing.Size(177, 76);
             this.checkout.TabIndex = 7;
             this.checkout.Text = "Check-OUT";
             this.checkout.UseVisualStyleBackColor = false;
@@ -166,25 +133,59 @@ namespace Park_Easy
             this.parkhistory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.parkhistory.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.parkhistory.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.parkhistory.Location = new System.Drawing.Point(1532, 230);
+            this.parkhistory.Location = new System.Drawing.Point(1342, 881);
             this.parkhistory.Margin = new System.Windows.Forms.Padding(0);
             this.parkhistory.Name = "parkhistory";
-            this.parkhistory.Size = new System.Drawing.Size(151, 56);
+            this.parkhistory.Size = new System.Drawing.Size(162, 76);
             this.parkhistory.TabIndex = 8;
             this.parkhistory.Text = "Parking History";
             this.parkhistory.UseVisualStyleBackColor = false;
+            this.parkhistory.Click += new System.EventHandler(this.parkhistory_Click);
             this.parkhistory.MouseLeave += new System.EventHandler(this.parkhistory_MouseLeave);
             this.parkhistory.MouseHover += new System.EventHandler(this.parkhistory_MouseHover);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Park_Easy.Properties.Resources.adminpanel;
+            this.pictureBox1.Location = new System.Drawing.Point(-2991, 107);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1547, 1043);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Park_Easy.Properties.Resources.adminpanel1;
+            this.pictureBox2.Location = new System.Drawing.Point(1, -3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1904, 1050);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // logout
+            // 
+            this.logout.AutoSize = true;
+            this.logout.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.logout.Location = new System.Drawing.Point(1774, 51);
+            this.logout.Name = "logout";
+            this.logout.Size = new System.Drawing.Size(104, 41);
+            this.logout.TabIndex = 9;
+            this.logout.Text = "logout";
+            this.logout.Click += new System.EventHandler(this.logout_Click_1);
             // 
             // adminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.logout);
             this.Controls.Add(this.parkhistory);
             this.Controls.Add(this.checkout);
             this.Controls.Add(this.checkin);
-            this.Controls.Add(this.allVehicle);
             this.Controls.Add(this.registration);
             this.Controls.Add(this.vehicleType);
             this.Controls.Add(this.driverType);
@@ -196,19 +197,20 @@ namespace Park_Easy
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button driverType;
         private System.Windows.Forms.Button vehicleType;
         private System.Windows.Forms.Button registration;
-        private System.Windows.Forms.Button allVehicle;
         private System.Windows.Forms.Button checkin;
         private System.Windows.Forms.Button checkout;
         private System.Windows.Forms.Button parkhistory;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label logout;
     }
 }

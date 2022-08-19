@@ -35,13 +35,14 @@ namespace Park_Easy
             this.desciptionDriverdetails = new System.Windows.Forms.RichTextBox();
             this.searchdriverdetails = new System.Windows.Forms.TextBox();
             this.resultsdriverdetails = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clear = new System.Windows.Forms.Button();
             this.save = new System.Windows.Forms.Button();
             this.update = new System.Windows.Forms.Button();
-            this.cancel = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.delete = new System.Windows.Forms.Button();
             this.ep = new System.Windows.Forms.ErrorProvider(this.components);
+            this.goback = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resultsdriverdetails)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -57,6 +58,7 @@ namespace Park_Easy
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // drivertypedetails
             // 
@@ -103,6 +105,20 @@ namespace Park_Easy
             this.resultsdriverdetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.resultsdriverdetails.Size = new System.Drawing.Size(1317, 307);
             this.resultsdriverdetails.TabIndex = 4;
+            this.resultsdriverdetails.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.resultsdriverdetails_CellContentDoubleClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(95, 26);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.editToolStripMenuItem.Text = "Edit";
             // 
             // clear
             // 
@@ -147,46 +163,46 @@ namespace Park_Easy
             this.update.TabIndex = 7;
             this.update.Text = "UPDATE";
             this.update.UseVisualStyleBackColor = false;
+            this.update.Click += new System.EventHandler(this.update_Click);
             // 
-            // cancel
+            // delete
             // 
-            this.cancel.BackColor = System.Drawing.Color.DimGray;
-            this.cancel.Enabled = false;
-            this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cancel.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.cancel.Location = new System.Drawing.Point(1437, 508);
-            this.cancel.Margin = new System.Windows.Forms.Padding(0);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(292, 118);
-            this.cancel.TabIndex = 8;
-            this.cancel.Text = "CANCEL";
-            this.cancel.UseVisualStyleBackColor = false;
-            this.cancel.Click += new System.EventHandler(this.cancel_Click);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(95, 26);
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
-            this.editToolStripMenuItem.Text = "Edit";
+            this.delete.BackColor = System.Drawing.Color.DimGray;
+            this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.delete.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.delete.Location = new System.Drawing.Point(1437, 508);
+            this.delete.Margin = new System.Windows.Forms.Padding(0);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(292, 118);
+            this.delete.TabIndex = 8;
+            this.delete.Text = "DELETE";
+            this.delete.UseVisualStyleBackColor = false;
+            this.delete.Click += new System.EventHandler(this.cancel_Click);
             // 
             // ep
             // 
             this.ep.ContainerControl = this;
+            // 
+            // goback
+            // 
+            this.goback.AutoSize = true;
+            this.goback.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.goback.ForeColor = System.Drawing.Color.Azure;
+            this.goback.Location = new System.Drawing.Point(1765, 46);
+            this.goback.Name = "goback";
+            this.goback.Size = new System.Drawing.Size(105, 24);
+            this.goback.TabIndex = 9;
+            this.goback.Text = "<< Go BACK";
+            this.goback.Click += new System.EventHandler(this.label1_Click);
             // 
             // driverType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.cancel);
+            this.Controls.Add(this.goback);
+            this.Controls.Add(this.delete);
             this.Controls.Add(this.update);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.save);
@@ -218,9 +234,10 @@ namespace Park_Easy
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.Button update;
-        private System.Windows.Forms.Button cancel;
+        private System.Windows.Forms.Button delete;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ErrorProvider ep;
+        private System.Windows.Forms.Label goback;
     }
 }

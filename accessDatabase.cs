@@ -15,7 +15,7 @@ namespace Park_Easy
         {
             if (con == null)
             {
-                con = new SqlConnection(@"Data Source=DESKTOP-USM56V1\SQLEXPRESS;Initial Catalog=parkeasyDB;Integrated Security=True");
+                con = new SqlConnection("Data Source=DESKTOP-USM56V1\\SQLEXPRESS;Initial Catalog=parkeasyDB;Integrated Security=True");
             }
 
             if (con.State != System.Data.ConnectionState.Open)
@@ -36,8 +36,9 @@ namespace Park_Easy
                         {
                         return true;
                         }
-                    return false;
+                    
                 }
+                return false;
             }
             catch
             {
