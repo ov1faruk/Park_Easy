@@ -50,10 +50,10 @@ namespace Park_Easy
             this.clear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clear.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clear.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.clear.Location = new System.Drawing.Point(1510, 845);
+            this.clear.Location = new System.Drawing.Point(1124, 596);
             this.clear.Margin = new System.Windows.Forms.Padding(0);
             this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(243, 91);
+            this.clear.Size = new System.Drawing.Size(214, 61);
             this.clear.TabIndex = 27;
             this.clear.Text = "CLEAR";
             this.clear.UseVisualStyleBackColor = false;
@@ -65,10 +65,10 @@ namespace Park_Easy
             this.save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.save.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.save.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.save.Location = new System.Drawing.Point(1252, 845);
+            this.save.Location = new System.Drawing.Point(883, 596);
             this.save.Margin = new System.Windows.Forms.Padding(0);
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(229, 91);
+            this.save.Size = new System.Drawing.Size(200, 61);
             this.save.TabIndex = 26;
             this.save.Text = "REGISTER";
             this.save.UseVisualStyleBackColor = false;
@@ -79,7 +79,7 @@ namespace Park_Easy
             this.goback.AutoSize = true;
             this.goback.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goback.ForeColor = System.Drawing.Color.Azure;
-            this.goback.Location = new System.Drawing.Point(1754, 52);
+            this.goback.Location = new System.Drawing.Point(1214, 36);
             this.goback.Name = "goback";
             this.goback.Size = new System.Drawing.Size(105, 24);
             this.goback.TabIndex = 25;
@@ -89,9 +89,9 @@ namespace Park_Easy
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(378, 769);
+            this.dateTimePicker1.Location = new System.Drawing.Point(261, 545);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(205, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(312, 20);
             this.dateTimePicker1.TabIndex = 24;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -103,64 +103,64 @@ namespace Park_Easy
             "Faculty",
             "Student",
             "Officials"});
-            this.drivertypedetails.Location = new System.Drawing.Point(1252, 769);
+            this.drivertypedetails.Location = new System.Drawing.Point(883, 536);
             this.drivertypedetails.Name = "drivertypedetails";
-            this.drivertypedetails.Size = new System.Drawing.Size(501, 39);
+            this.drivertypedetails.Size = new System.Drawing.Size(455, 39);
             this.drivertypedetails.TabIndex = 23;
             this.drivertypedetails.SelectedIndexChanged += new System.EventHandler(this.drivertypedetails_SelectedIndexChanged);
             // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(1252, 379);
+            this.textBox5.Location = new System.Drawing.Point(883, 272);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(501, 39);
+            this.textBox5.Size = new System.Drawing.Size(455, 39);
             this.textBox5.TabIndex = 22;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(1252, 552);
+            this.textBox4.Location = new System.Drawing.Point(883, 392);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(501, 139);
+            this.textBox4.Size = new System.Drawing.Size(455, 99);
             this.textBox4.TabIndex = 21;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(1252, 203);
+            this.textBox3.Location = new System.Drawing.Point(883, 139);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(501, 39);
+            this.textBox3.Size = new System.Drawing.Size(455, 39);
             this.textBox3.TabIndex = 20;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(378, 583);
+            this.textBox2.Location = new System.Drawing.Point(261, 272);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(501, 39);
+            this.textBox2.Size = new System.Drawing.Size(312, 39);
             this.textBox2.TabIndex = 19;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(378, 401);
+            this.textBox1.Location = new System.Drawing.Point(261, 405);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(501, 39);
+            this.textBox1.Size = new System.Drawing.Size(312, 39);
             this.textBox1.TabIndex = 18;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textvtype
             // 
             this.textvtype.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textvtype.Location = new System.Drawing.Point(378, 223);
+            this.textvtype.Location = new System.Drawing.Point(261, 157);
             this.textvtype.Name = "textvtype";
-            this.textvtype.Size = new System.Drawing.Size(501, 39);
+            this.textvtype.Size = new System.Drawing.Size(312, 39);
             this.textvtype.TabIndex = 17;
             this.textvtype.TextChanged += new System.EventHandler(this.textvtype_TextChanged);
             // 
@@ -169,7 +169,7 @@ namespace Park_Easy
             this.pictureBox1.Image = global::Park_Easy.Properties.Resources.reg;
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1907, 1041);
+            this.pictureBox1.Size = new System.Drawing.Size(1348, 733);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
@@ -179,7 +179,7 @@ namespace Park_Easy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.save);
             this.Controls.Add(this.goback);

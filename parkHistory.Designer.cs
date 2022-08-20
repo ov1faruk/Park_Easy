@@ -37,9 +37,9 @@ namespace Park_Easy
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Park_Easy.Properties.Resources.parkhistory;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1907, 1041);
+            this.pictureBox1.Size = new System.Drawing.Size(1354, 734);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -49,7 +49,7 @@ namespace Park_Easy
             this.goback.AutoSize = true;
             this.goback.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goback.ForeColor = System.Drawing.Color.Azure;
-            this.goback.Location = new System.Drawing.Point(1744, 51);
+            this.goback.Location = new System.Drawing.Point(1172, 33);
             this.goback.Name = "goback";
             this.goback.Size = new System.Drawing.Size(105, 24);
             this.goback.TabIndex = 14;
@@ -60,7 +60,7 @@ namespace Park_Easy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.goback);
             this.Controls.Add(this.pictureBox1);
             this.Name = "parkHistory";

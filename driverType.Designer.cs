@@ -52,9 +52,9 @@ namespace Park_Easy
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Park_Easy.Properties.Resources.driverdetails;
-            this.pictureBox1.Location = new System.Drawing.Point(-13, -21);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1905, 1064);
+            this.pictureBox1.Size = new System.Drawing.Size(1351, 731);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -68,7 +68,7 @@ namespace Park_Easy
             "Faculty",
             "Student",
             "Officials"});
-            this.drivertypedetails.Location = new System.Drawing.Point(543, 217);
+            this.drivertypedetails.Location = new System.Drawing.Point(388, 156);
             this.drivertypedetails.Name = "drivertypedetails";
             this.drivertypedetails.Size = new System.Drawing.Size(501, 39);
             this.drivertypedetails.TabIndex = 1;
@@ -76,16 +76,16 @@ namespace Park_Easy
             // desciptionDriverdetails
             // 
             this.desciptionDriverdetails.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.desciptionDriverdetails.Location = new System.Drawing.Point(543, 327);
+            this.desciptionDriverdetails.Location = new System.Drawing.Point(388, 214);
             this.desciptionDriverdetails.Name = "desciptionDriverdetails";
-            this.desciptionDriverdetails.Size = new System.Drawing.Size(501, 199);
+            this.desciptionDriverdetails.Size = new System.Drawing.Size(501, 156);
             this.desciptionDriverdetails.TabIndex = 2;
             this.desciptionDriverdetails.Text = "";
             // 
             // searchdriverdetails
             // 
             this.searchdriverdetails.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchdriverdetails.Location = new System.Drawing.Point(543, 587);
+            this.searchdriverdetails.Location = new System.Drawing.Point(388, 404);
             this.searchdriverdetails.Name = "searchdriverdetails";
             this.searchdriverdetails.Size = new System.Drawing.Size(501, 39);
             this.searchdriverdetails.TabIndex = 3;
@@ -97,13 +97,13 @@ namespace Park_Easy
             this.resultsdriverdetails.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.resultsdriverdetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.resultsdriverdetails.ContextMenuStrip = this.contextMenuStrip1;
-            this.resultsdriverdetails.Location = new System.Drawing.Point(543, 708);
+            this.resultsdriverdetails.Location = new System.Drawing.Point(388, 516);
             this.resultsdriverdetails.MultiSelect = false;
             this.resultsdriverdetails.Name = "resultsdriverdetails";
             this.resultsdriverdetails.ReadOnly = true;
             this.resultsdriverdetails.RowHeadersVisible = false;
             this.resultsdriverdetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.resultsdriverdetails.Size = new System.Drawing.Size(1317, 307);
+            this.resultsdriverdetails.Size = new System.Drawing.Size(935, 201);
             this.resultsdriverdetails.TabIndex = 4;
             this.resultsdriverdetails.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.resultsdriverdetails_CellContentDoubleClick);
             // 
@@ -126,10 +126,10 @@ namespace Park_Easy
             this.clear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clear.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clear.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.clear.Location = new System.Drawing.Point(1098, 508);
+            this.clear.Location = new System.Drawing.Point(1129, 259);
             this.clear.Margin = new System.Windows.Forms.Padding(0);
             this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(292, 118);
+            this.clear.Size = new System.Drawing.Size(194, 68);
             this.clear.TabIndex = 6;
             this.clear.Text = "CLEAR";
             this.clear.UseVisualStyleBackColor = false;
@@ -141,10 +141,10 @@ namespace Park_Easy
             this.save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.save.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.save.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.save.Location = new System.Drawing.Point(1098, 327);
+            this.save.Location = new System.Drawing.Point(906, 156);
             this.save.Margin = new System.Windows.Forms.Padding(0);
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(292, 118);
+            this.save.Size = new System.Drawing.Size(199, 68);
             this.save.TabIndex = 5;
             this.save.Text = "SAVE";
             this.save.UseVisualStyleBackColor = false;
@@ -156,10 +156,10 @@ namespace Park_Easy
             this.update.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.update.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.update.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.update.Location = new System.Drawing.Point(1437, 327);
+            this.update.Location = new System.Drawing.Point(906, 259);
             this.update.Margin = new System.Windows.Forms.Padding(0);
             this.update.Name = "update";
-            this.update.Size = new System.Drawing.Size(292, 118);
+            this.update.Size = new System.Drawing.Size(199, 68);
             this.update.TabIndex = 7;
             this.update.Text = "UPDATE";
             this.update.UseVisualStyleBackColor = false;
@@ -171,10 +171,10 @@ namespace Park_Easy
             this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.delete.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.delete.Location = new System.Drawing.Point(1437, 508);
+            this.delete.Location = new System.Drawing.Point(1129, 156);
             this.delete.Margin = new System.Windows.Forms.Padding(0);
             this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(292, 118);
+            this.delete.Size = new System.Drawing.Size(194, 68);
             this.delete.TabIndex = 8;
             this.delete.Text = "DELETE";
             this.delete.UseVisualStyleBackColor = false;
@@ -189,7 +189,7 @@ namespace Park_Easy
             this.goback.AutoSize = true;
             this.goback.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goback.ForeColor = System.Drawing.Color.Azure;
-            this.goback.Location = new System.Drawing.Point(1765, 46);
+            this.goback.Location = new System.Drawing.Point(1192, 29);
             this.goback.Name = "goback";
             this.goback.Size = new System.Drawing.Size(105, 24);
             this.goback.TabIndex = 9;
@@ -200,7 +200,7 @@ namespace Park_Easy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.goback);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.update);

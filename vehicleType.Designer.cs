@@ -46,7 +46,7 @@ namespace Park_Easy
             // textvtype
             // 
             this.textvtype.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textvtype.Location = new System.Drawing.Point(578, 231);
+            this.textvtype.Location = new System.Drawing.Point(410, 159);
             this.textvtype.Name = "textvtype";
             this.textvtype.Size = new System.Drawing.Size(501, 39);
             this.textvtype.TabIndex = 4;
@@ -54,16 +54,16 @@ namespace Park_Easy
             // textDescription
             // 
             this.textDescription.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textDescription.Location = new System.Drawing.Point(578, 352);
+            this.textDescription.Location = new System.Drawing.Point(410, 230);
             this.textDescription.Multiline = true;
             this.textDescription.Name = "textDescription";
-            this.textDescription.Size = new System.Drawing.Size(501, 197);
+            this.textDescription.Size = new System.Drawing.Size(501, 148);
             this.textDescription.TabIndex = 5;
             // 
             // txtSearchVehicke
             // 
             this.txtSearchVehicke.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchVehicke.Location = new System.Drawing.Point(578, 605);
+            this.txtSearchVehicke.Location = new System.Drawing.Point(410, 410);
             this.txtSearchVehicke.Name = "txtSearchVehicke";
             this.txtSearchVehicke.Size = new System.Drawing.Size(501, 39);
             this.txtSearchVehicke.TabIndex = 6;
@@ -73,10 +73,10 @@ namespace Park_Easy
             this.dgvVehicleType.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvVehicleType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVehicleType.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvVehicleType.Location = new System.Drawing.Point(578, 722);
+            this.dgvVehicleType.Location = new System.Drawing.Point(410, 491);
             this.dgvVehicleType.Name = "dgvVehicleType";
             this.dgvVehicleType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvVehicleType.Size = new System.Drawing.Size(782, 289);
+            this.dgvVehicleType.Size = new System.Drawing.Size(928, 207);
             this.dgvVehicleType.TabIndex = 7;
             // 
             // goback
@@ -84,7 +84,7 @@ namespace Park_Easy
             this.goback.AutoSize = true;
             this.goback.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goback.ForeColor = System.Drawing.Color.Azure;
-            this.goback.Location = new System.Drawing.Point(1751, 53);
+            this.goback.Location = new System.Drawing.Point(1233, 21);
             this.goback.Name = "goback";
             this.goback.Size = new System.Drawing.Size(105, 24);
             this.goback.TabIndex = 10;
@@ -94,9 +94,9 @@ namespace Park_Easy
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Park_Easy.Properties.Resources.vehdet;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1904, 1048);
+            this.pictureBox1.Size = new System.Drawing.Size(1361, 732);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -108,10 +108,10 @@ namespace Park_Easy
             this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.delete.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.delete.Location = new System.Drawing.Point(1479, 533);
+            this.delete.Location = new System.Drawing.Point(944, 330);
             this.delete.Margin = new System.Windows.Forms.Padding(0);
             this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(292, 118);
+            this.delete.Size = new System.Drawing.Size(185, 71);
             this.delete.TabIndex = 14;
             this.delete.Text = "DELETE";
             this.delete.UseVisualStyleBackColor = false;
@@ -122,10 +122,10 @@ namespace Park_Easy
             this.update.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.update.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.update.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.update.Location = new System.Drawing.Point(1479, 352);
+            this.update.Location = new System.Drawing.Point(944, 230);
             this.update.Margin = new System.Windows.Forms.Padding(0);
             this.update.Name = "update";
-            this.update.Size = new System.Drawing.Size(292, 118);
+            this.update.Size = new System.Drawing.Size(185, 69);
             this.update.TabIndex = 13;
             this.update.Text = "UPDATE";
             this.update.UseVisualStyleBackColor = false;
@@ -136,10 +136,10 @@ namespace Park_Easy
             this.clear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clear.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clear.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.clear.Location = new System.Drawing.Point(1140, 533);
+            this.clear.Location = new System.Drawing.Point(1160, 330);
             this.clear.Margin = new System.Windows.Forms.Padding(0);
             this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(292, 118);
+            this.clear.Size = new System.Drawing.Size(178, 71);
             this.clear.TabIndex = 12;
             this.clear.Text = "CLEAR";
             this.clear.UseVisualStyleBackColor = false;
@@ -150,10 +150,10 @@ namespace Park_Easy
             this.save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.save.Font = new System.Drawing.Font("Poppins", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.save.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.save.Location = new System.Drawing.Point(1140, 352);
+            this.save.Location = new System.Drawing.Point(1160, 230);
             this.save.Margin = new System.Windows.Forms.Padding(0);
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(292, 118);
+            this.save.Size = new System.Drawing.Size(178, 69);
             this.save.TabIndex = 11;
             this.save.Text = "SAVE";
             this.save.UseVisualStyleBackColor = false;
@@ -162,7 +162,7 @@ namespace Park_Easy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1350, 729);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.update);
             this.Controls.Add(this.clear);
